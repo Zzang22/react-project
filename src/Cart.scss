@@ -1,0 +1,18 @@
+@mixin alert() {
+  background-color: honeydew;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.my-alert2 {
+  @include alert();
+  background-color: lemonchiffon;
+}
+.my-alert2 p {
+  margin-bottom: 0;
+  color: midnightblue;
+  font-weight: bold;
+}
