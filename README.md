@@ -9,6 +9,8 @@
 - 장바구니 페이지 : 페이지 라우팅. Cart 페이지에서는 구매하기를 누르면 장바구니에 담기고 수량 수정 가능
 
 (※계속 수정할 예정)
+![다운로드](https://user-images.githubusercontent.com/70152993/115055720-cfd9f300-9f1c-11eb-8955-8dcb60e829af.jpg)
+
 
 # Let's go (github page로 배포)
 https://Zzang22.github.io/react-project
