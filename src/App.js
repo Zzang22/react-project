@@ -6,7 +6,7 @@ import Data from './data.js';
 //import Detail from './Detail.js';
 let Detail = lazy(()=> import('./Detail.js'));
 import axios from 'axios';
-import { Link, Route, Switch, useHistory } from 'react-router-dom';
+import { Link, Route, Switch, useHistory, BrowserRouter } from 'react-router-dom';
 import {connect} from 'react-redux';
 import Cart from './Cart';
 
@@ -39,7 +39,7 @@ function App() {
       </Navbar>
 
       
-    <Switch>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route exact path="/">
           <Jumbotron className="background">
             <h1> SPRING BIG SALE <span className="percent">[50% OFF ↓]</span>  </h1>
@@ -94,12 +94,12 @@ function App() {
       </Route>
       {/*<Route path="/component" component={Modal} ></Route>  route쓰는 다른 방법 컴포넌트만 보이게 함*/}
       
-      <Route path="/cart">
+      <Route path="/cart" component={Cart}>
         <Cart></Cart>
       </Route>
+    </BrowserRouter>
 
-
-    </Switch>
+    
     {/* 추가할 기능
     1.로딩 중 UI 만들기 2.보여줄 상품이 마지막에 도달했을 때 버튼 숨기기
     3. ajax post로 요청하는 경우 찾아보기! 
