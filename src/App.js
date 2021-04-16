@@ -39,7 +39,7 @@ function App() {
       </Navbar>
 
       
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    
       <Route exact path="/">
           <Jumbotron className="background">
             <h1> SPRING BIG SALE <span className="percent">[50% OFF ↓]</span>  </h1>
@@ -97,7 +97,7 @@ function App() {
       <Route path="/cart" component={Cart}>
         <Cart></Cart>
       </Route>
-    </BrowserRouter>
+    
 
     
     {/* 추가할 기능
