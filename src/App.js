@@ -85,7 +85,7 @@ function App() {
           </div>
       </Route>
 
-      <Route path="/detail/:id">
+      <Route path="/detail/:id" component={Detail}>
         <재고context.Provider value={재고}>
           <Suspense fallback={<div>로딩중이에요</div>}>
             <Detail shoes={shoes} 재고={재고} 재고변경={재고변경}/>
